@@ -1,0 +1,20 @@
+#test {
+  margin: 0 10px !important;
+  background: #fff !important;
+  padding: 3px !important;
+  color: #000 !important;
+}
+
+.ads-ad,
+._Ak,
+.annotation,
+.video-annotations,
+.video-ads,
+.ad-container,
+.ytd-banner-promo-renderer-background,
+.darla,
+.has-beacon-click,
+.gemini-ad,
+.vp-main {
+  display: none !important;
+}
