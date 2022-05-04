@@ -31,7 +31,8 @@
 .ad-banner-wrapper,
 a[href="https://example.org"],
 .my-adsLDRB
-div[class^='ad'] {
+div[class^='ad'],
+div[class^='csm'] {
   display: none !important;
 }
 
@@ -41,7 +42,10 @@ div[class^='ad'] {
 #mega-banner-wrapper,
 #animation_container,
 #commerce-module-content,
-#Banner {
+#Banner,
+#desktop-ad-center-1,
+#squished-desktop-row,
+#ape_Gateway_right-2_desktop_placement {
   display: none !important;
 }
 
