@@ -1,5 +1,5 @@
 {
-  "name": "Ad Blocker",
+  "name": "Ad Blockr",
   "version": "1.0",
   "description": "Block annoying ads",
   "manifest_version": 2,
@@ -10,8 +10,7 @@
 
   "browser_action": {
     "default_icon": "icons/logo_128X128.png",
-    "default_title": "Ad Blocker",
-    "default_popup": "popup.html"
+    "default_title": "ad blokr"
   },
 
   "permissions": [
