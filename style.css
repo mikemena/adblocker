@@ -21,18 +21,7 @@
 .commercial-unit-desktop-top,
 .vp-main,
 .promoted-trend,
-.promoted-tweet,
-.r-1hycxz,
-.oIk2Cb,
-.ULSxyf,
-.rpBMYb,
-.GoogleActiveViewElement,
-.GoogleCreativeContainerClass,
-.ad-banner-wrapper,
-a[href="https://example.org"],
-.my-adsLDRB
-div[class^='ad'],
-div[class^='csm'] {
+.promoted-tweet {
   display: none !important;
 }
 
@@ -40,15 +29,6 @@ div[class^='csm'] {
 #bottomads,
 #myLightboxContainer,
 #mega-banner-wrapper,
-#animation_container,
-#commerce-module-content,
-#Banner,
-#desktop-ad-center-1,
-#squished-desktop-row,
-#ape_Gateway_right-2_desktop_placement {
-  display: none !important;
-}
-
-div[aria-label='Yahoo Video Player'] {
+#animation_container {
   display: none !important;
 }
