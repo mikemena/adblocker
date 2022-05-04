@@ -29,6 +29,9 @@
 #bottomads,
 #myLightboxContainer,
 #mega-banner-wrapper,
-#animation_container {
+#animation_container,
+/* Yahoo */
+#Banner,
+#commerce-module-container {
   display: none !important;
 }
