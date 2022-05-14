@@ -21,7 +21,10 @@
 .commercial-unit-desktop-top,
 .vp-main,
 .promoted-trend,
-.promoted-tweet {
+.promoted-tweet,
+.ad-card,
+.ad-free-upsell-container,
+div[class^='ads'] {
   display: none !important;
 }
 
