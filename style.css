@@ -27,6 +27,12 @@
 div[class^='ads'] {
   display: none !important;
 }
+/*piratebay*/
+.adblock,
+.ad120,
+.ad468,
+.ad728
+
 
 #tads,
 #bottomads,
