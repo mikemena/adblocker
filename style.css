@@ -31,8 +31,9 @@ div[class^='ads'] {
 .adblock,
 .ad120,
 .ad468,
-.ad728
+.ad728,
 
+div[attribute="data-text-ad"],
 
 #tads,
 #bottomads,
