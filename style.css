@@ -24,7 +24,8 @@
 .promoted-tweet,
 .ad-card,
 .ad-free-upsell-container,
-div[class^='ads'] {
+div[class^="ad"],
+div[class*="ad"] {
   display: none !important;
 }
 /*piratebay*/
@@ -42,6 +43,17 @@ div[attribute="data-text-ad"],
 #animation_container,
 /* Yahoo */
 #Banner,
-#commerce-module-container {
+#commerce-module-container,
+#YDC-Overlay-Stack-Composite,
+#myLightboxContainer,
+.Overlay-0-Lightbox-Proxy,
+.YDC-Overlay-Stack-Composite,
+.sda-LREC
+#lightbox-wrapper
+
+ /* ESPN */ 
+ .cta,
+ .tune-in,
+ .matchup {
   display: none !important;
 }
