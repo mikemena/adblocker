@@ -15,12 +15,20 @@
 
   "permissions": [
     "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>",
     "http://*/*",
     "https://*/*",
+    "http://*/",
+    "https://*/",
     "file:///*/*",
     "cookies",
     "storage"
   ],
+  "background": {
+    "scripts": ["blockedsites.js", "background.js"]
+  },
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*", "file:///*/*"],

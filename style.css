@@ -24,8 +24,10 @@
 .promoted-tweet,
 .ad-card,
 .ad-free-upsell-container,
-div[class^="ad"],
-div[class*="ad"] {
+.ad,
+.google_ads,
+div[class^="adthrive-ad"],
+div[class^="ads"] {
   display: none !important;
 }
 /*piratebay*/
@@ -33,27 +35,17 @@ div[class*="ad"] {
 .ad120,
 .ad468,
 .ad728,
-
 div[attribute="data-text-ad"],
-
 #tads,
 #bottomads,
-#myLightboxContainer,
-#mega-banner-wrapper,
-#animation_container,
-/* Yahoo */
-#Banner,
-#commerce-module-container,
-#YDC-Overlay-Stack-Composite,
-#myLightboxContainer,
-.Overlay-0-Lightbox-Proxy,
-.YDC-Overlay-Stack-Composite,
-.sda-LREC
-#lightbox-wrapper
+.cta,
+.tune-in,
+.matchup,
+.fc-dialog-container {
+  display: none !important;
+}
 
- /* ESPN */ 
- .cta,
- .tune-in,
- .matchup {
+,
+[aria-label="Ads"]:after {
   display: none !important;
 }
