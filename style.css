@@ -27,7 +27,8 @@
 .ad,
 .google_ads,
 div[class^="adthrive-ad"],
-div[class^="ads"] {
+div[class^="ads"],
+.wafer-rapid-module {
   display: none !important;
 }
 /*piratebay*/
@@ -45,7 +46,6 @@ div[attribute="data-text-ad"],
   display: none !important;
 }
 
-,
 [aria-label="Ads"]:after {
   display: none !important;
 }
