@@ -110,7 +110,8 @@ parent:has(> [src*="survey"]) {
 }
 
 #atomic .Bgc\(\#2d1152\) {
-  background-color: #503722c1;
+  background-color: rgb(46, 165, 102);
+  font-size: 14px;
 }
 
 #atomic .Bgz\(702px\) > #header-logo,
@@ -122,6 +123,41 @@ parent:has(> [src*="survey"]) {
   display: none !important;
 }
 
-#ybar-logo > img::after {
-  content: "Outside";
+#ybar-logo > a {
+  src: "";
+}
+
+#atomic .C\(\$finNavBlueText\),
+#atomic .C\(\$finNavBlueText\)\:h:hover {
+  color: rgb(46, 165, 102);
+  font-size: 14px;
+}
+
+#header-mail-button,
+#header-notification-button {
+  display: none !important;
+}
+
+#atomic .C\(\$primaryColor\),
+#atomic .C\(--text1\),
+#atomic .C\(\$primaryColor\)\:h:hover {
+  color: #114dc1;
+  font-weight: 200;
+}
+
+#header-signin-link > span,
+.Bds\(s\) {
+  color: rgb(46, 165, 102);
+  font-size: 16px;
+}
+
+#atomic .Bdc\(\$c-fuji-grape-jelly\),
+#atomic .Bdc\(\$grapeJelly\),
+#atomic .Bdc\(\$grapeJelly\)\:h:hover {
+  border: none;
+}
+
+#atomic .Bgc\(\#2d1152\) {
+  font-size: 18px;
+  padding-bottom: 5px;
 }
