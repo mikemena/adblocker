@@ -18,6 +18,7 @@
 .horoscope-container,
 .footertdv2wafer,
 .ii1g3i-0,
+.sc-27ebcd42-0,
 .commercial-unit-desktop-top,
 .vp-main,
 .promoted-trend,
@@ -26,6 +27,7 @@
 .ad-free-upsell-container,
 .ad,
 .google_ads,
+.ff-sans,
 div[class^="adthrive-ad"],
 div[class^="ads"],
 #module-hpsetBanner,
@@ -56,6 +58,10 @@ div[attribute="data-text-ad"],
 }
 
 [data-wikis*="AOC"] {
+  display: none !important;
+}
+
+[data-wikis*="Nancy_Pelosi"] {
   display: none !important;
 }
 
@@ -104,5 +110,17 @@ a:contains("Obama") {
 }
 
 a:contains("Biden") {
+  display: none !important;
+}
+
+div[id*="cookie"] {
+  display: none !important;
+}
+
+div > img[src*="survey"] {
+  display: none !important;
+}
+
+parent:has(> [src*="survey"]) {
   display: none !important;
 }
