@@ -110,7 +110,7 @@ parent:has(> [src*="survey"]) {
 }
 
 #atomic .Bgc\(\#2d1152\) {
-  background-color: rgb(46, 165, 102);
+  background-color: #0081f2;
   font-size: 14px;
 }
 
@@ -129,7 +129,7 @@ parent:has(> [src*="survey"]) {
 
 #atomic .C\(\$finNavBlueText\),
 #atomic .C\(\$finNavBlueText\)\:h:hover {
-  color: rgb(46, 165, 102);
+  color: #0081f2;
   font-size: 14px;
 }
 
@@ -141,13 +141,13 @@ parent:has(> [src*="survey"]) {
 #atomic .C\(\$primaryColor\),
 #atomic .C\(--text1\),
 #atomic .C\(\$primaryColor\)\:h:hover {
-  color: #114dc1;
+  color: #0081f2;
   font-weight: 200;
 }
 
 #header-signin-link > span,
 .Bds\(s\) {
-  color: rgb(46, 165, 102);
+  color: #0081f2;
   font-size: 16px;
 }
 
@@ -159,5 +159,12 @@ parent:has(> [src*="survey"]) {
 
 #atomic .Bgc\(\#2d1152\) {
   font-size: 18px;
-  padding-bottom: 5px;
+  padding: 2px 10px;
+}
+
+#atomic .H\(30px\),
+#atomic .H\(plButtonWd\),
+#atomic .H\(spon5Height\),
+#atomic .H\(22px\) {
+  height: 30px;
 }
