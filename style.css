@@ -73,43 +73,27 @@ div[attribute="data-text-ad"],
   display: none !important;
 }
 
+[data-property="Entertainment"] {
+  display: none !important;
+}
+
+[data-property="Style"] {
+  display: none !important;
+}
+
+[data-property="Lifestyle"] {
+  display: none !important;
+}
+
+[data-property="Politics"] {
+  display: none !important;
+}
+
 [data-wikis*="Biden"] {
   display: none !important;
 }
 
 [data-wikis*="Kardashian"] {
-  display: none !important;
-}
-
-h1:contains("Taylor Swift") {
-  display: none !important;
-}
-
-h1:contains("Obama") {
-  display: none !important;
-}
-
-h3:contains("Taylor Swift") {
-  display: none !important;
-}
-
-h3:contains("Biden") {
-  display: none !important;
-}
-
-a:contains("Taylor Swift") {
-  display: none !important;
-}
-
-a:contains("Jay-Z") {
-  display: none !important;
-}
-
-a:contains("Obama") {
-  display: none !important;
-}
-
-a:contains("Biden") {
   display: none !important;
 }
 
@@ -123,4 +107,21 @@ div > img[src*="survey"] {
 
 parent:has(> [src*="survey"]) {
   display: none !important;
+}
+
+#atomic .Bgc\(\#2d1152\) {
+  background-color: #503722c1;
+}
+
+#atomic .Bgz\(702px\) > #header-logo,
+#atomic .W\(92px\) {
+  display: none !important;
+}
+
+#ybar-logo > img::before {
+  display: none !important;
+}
+
+#ybar-logo > img::after {
+  content: "Outside";
 }
