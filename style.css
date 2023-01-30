@@ -141,7 +141,7 @@ parent:has(> [src*="survey"]) {
 #atomic .C\(\$primaryColor\),
 #atomic .C\(--text1\),
 #atomic .C\(\$primaryColor\)\:h:hover {
-  color: #0081f2;
+  color: #292929;
   font-weight: 200;
 }
 
@@ -167,4 +167,9 @@ parent:has(> [src*="survey"]) {
 #atomic .H\(spon5Height\),
 #atomic .H\(22px\) {
   height: 30px;
+}
+
+svg,
+[title="Yahoo Finance Plus"] {
+  display: none !important;
 }
