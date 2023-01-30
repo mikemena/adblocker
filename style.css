@@ -169,7 +169,6 @@ parent:has(> [src*="survey"]) {
   height: 30px;
 }
 
-svg,
 [title="Yahoo Finance Plus"] {
   display: none !important;
 }
