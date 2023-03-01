@@ -28,9 +28,10 @@
 .ad,
 .google_ads,
 .ff-sans,
-div[class^="adthrive-ad"],
-div[class^="ads"],
+div[class^='adthrive-ad'],
+div[class^='ads'],
 #module-hpsetBanner,
+.monalixa-event,
 #sda-LREC {
   display: none !important;
 }
@@ -39,7 +40,7 @@ div[class^="ads"],
 .ad120,
 .ad468,
 .ad728,
-div[attribute="data-text-ad"],
+div[attribute='data-text-ad'],
 #tads,
 #bottomads,
 .cta,
@@ -49,63 +50,63 @@ div[attribute="data-text-ad"],
   display: none !important;
 }
 
-[aria-label="Ads"]:after {
+[aria-label='Ads']:after {
   display: none !important;
 }
 
-[data-wikis*="Kamala"] {
+[data-wikis*='Kamala'] {
   display: none !important;
 }
 
-[data-wikis*="AOC"] {
+[data-wikis*='AOC'] {
   display: none !important;
 }
 
-[data-wikis*="Nancy_Pelosi"] {
+[data-wikis*='Nancy_Pelosi'] {
   display: none !important;
 }
 
-[data-wikis*="Taylor_Swift"] {
+[data-wikis*='Taylor_Swift'] {
   display: none !important;
 }
 
-[data-property="Celebrity"] {
+[data-property='Celebrity'] {
   display: none !important;
 }
 
-[data-property="Entertainment"] {
+[data-property='Entertainment'] {
   display: none !important;
 }
 
-[data-property="Style"] {
+[data-property='Style'] {
   display: none !important;
 }
 
-[data-property="Lifestyle"] {
+[data-property='Lifestyle'] {
   display: none !important;
 }
 
-[data-property="Politics"] {
+[data-property='Politics'] {
   display: none !important;
 }
 
-[data-wikis*="Biden"] {
+[data-wikis*='Biden'] {
   display: none !important;
 }
 
-[data-wikis*="Kardashian"] {
+[data-wikis*='Kardashian'] {
   display: none !important;
 }
 
-div[id*="cookie"] {
+div[id*='cookie'] {
   display: none !important;
 }
 
-div > img[src*="survey"] {
+div > img[src*='survey'] {
   display: none !important;
 }
 
-parent:has(> [src*="survey"]) {
+parent:has(> [src*='survey']) {
   display: none !important;
 }
 
@@ -124,7 +125,7 @@ parent:has(> [src*="survey"]) {
 }
 
 #ybar-logo > a {
-  src: "";
+  src: '';
 }
 
 #atomic .C\(\$finNavBlueText\),
@@ -169,9 +170,7 @@ parent:has(> [src*="survey"]) {
   height: 30px;
 }
 
-[title="Yahoo Finance Plus"],
+[title='Yahoo Finance Plus'],
 #finance-overlay-index {
   display: none !important;
 }
-
-
