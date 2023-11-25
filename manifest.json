@@ -32,7 +32,7 @@
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*", "file:///*/*"],
-      "js": ["script.js"],
+      "js": ["content.js", "script.js"],
       "all_frames": true
     }
   ],
