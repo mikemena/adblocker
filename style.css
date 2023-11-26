@@ -111,7 +111,6 @@ parent:has(> [src*='survey']) {
 }
 
 #atomic .Bgc\(\#2d1152\) {
-  background-color: #007560;
   font-size: 14px;
 }
 
@@ -130,7 +129,6 @@ parent:has(> [src*='survey']) {
 
 #atomic .C\(\$finNavBlueText\),
 #atomic .C\(\$finNavBlueText\)\:h:hover {
-  color: #007560;
   font-size: 14px;
 }
 
@@ -148,7 +146,6 @@ parent:has(> [src*='survey']) {
 
 #header-signin-link > span,
 .Bds\(s\) {
-  color: #007560;
   font-size: 16px;
 }
 
@@ -175,3 +172,19 @@ parent:has(> [src*='survey']) {
 #finance-desktop-web-portfolio-stickyheader {
   display: none !important;
 }
+#header-signin-link > span,
+.Bds\(s\),
+#atomic .C\(\$finNavBlueText\),
+#atomic .C\(\$finNavBlueText\)\:h:hover {
+  color: #007560;
+}
+
+#ybar-search,
+#atomic .Bgc\(\#2d1152\),
+#header-desktop-search-button {
+  background-color: #007560;
+}
+
+/* #Masterwrap {
+  background-color: #2f3131;
+} */
