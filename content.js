@@ -37,6 +37,9 @@ const selectorsToRemove = [
   '#mrt-node-Overlay-2-MonalixaComponent',
   '#defaultLREC-sizer',
   '#sda-Horizon',
+  // The following is for MSN sports page
+  '.socialPostCard-DS-EntryPoint1-1',
+  '#League_r_1',
   '[data-content="Advertisement"]' // Example of a data-content attribute selector
 ];
 

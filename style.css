@@ -185,6 +185,9 @@ parent:has(> [src*='survey']) {
   background-color: #007560;
 }
 
-/* #Masterwrap {
-  background-color: #2f3131;
-} */
+.socialPostCard-DS-EntryPoint1-1,
+.oneFooter_wrapper-DS-EntryPoint1-1,
+.commentContainer-DS-EntryPoint1-1,
+.commentOverlayContainer-DS-EntryPoint1-1 {
+  display: none !important;
+}
