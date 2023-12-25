@@ -53,6 +53,10 @@ div[attribute='data-text-ad'],
   display: none !important;
 }
 
+[aria-label='Ads'] {
+  display: none !important;
+}
+
 [data-wikis*='Kamala'] {
   display: none !important;
 }
