@@ -5,9 +5,6 @@ function removeElementsBySelector(selectors) {
       const element = document.getElementById(selector.substring(1));
       if (element) {
         element.parentNode.removeChild(element);
-        console.log(`Element with ID '${selector}' removed.`);
-      } else {
-        console.log(`Element with ID '${selector}' not found.`);
       }
     }
     // Check if the selector is for a class
@@ -16,7 +13,6 @@ function removeElementsBySelector(selectors) {
       while (elements.length > 0) {
         elements[0].parentNode.removeChild(elements[0]);
       }
-      console.log(`Elements with class '${selector}' removed.`);
     }
     // Check if the selector is for a data-content attribute
     else if (selector.startsWith('[data-content="')) {
@@ -24,7 +20,6 @@ function removeElementsBySelector(selectors) {
       elements.forEach(element => {
         element.parentNode.removeChild(element);
       });
-      console.log(`Elements with data-content '${selector}' removed.`);
     }
   });
 }
