@@ -15,7 +15,7 @@ function getAds() {
   return Array.from(document.querySelectorAll('div')).filter(function (el) {
     var filteredAd;
 
-    if (el.getInnerHTML().includes(sponsoredSvgPath)) {
+    if (el.getHTML().includes(sponsoredSvgPath)) {
       filteredAd = el;
     }
 
