@@ -35,8 +35,27 @@ const selectorsToRemove = [
   // The following is for MSN sports page
   '.socialPostCard-DS-EntryPoint1-1',
   '#League_r_1',
-  '[data-content="Advertisement"]' // Example of a data-content attribute selector
+  '[data-content="Advertisement"]', // Example of a data-content attribute selector
+  '[data-content="CNN"]', // Generic example, adjust based on actual HTML structure
+  '.trc-first-recommendation',
+  'videoCube',
+  'trc_spotlight_item',
+  'iframe[src*="cnn.com"]', // Blocks iframes containing CNN content
+  '[href*="cnn.com"]', // Blocks links pointing to CNN
+  'span:contains("Ad")',
+  '.native-ad-item',
+  '.trc-content-sponsored',
+  '.stream-ad',
+  '[id^="taboola"]'
 ];
 
-// Call the function with the array of selectors
-removeElementsBySelector(selectorsToRemove);
+// Call the function with the array of selectors immediately after DOM content loaded
+document.addEventListener('DOMContentLoaded', function () {
+  removeElementsBySelector(selectorsToRemove);
+});
+
+// Additional call with a delay to handle dynamically loaded content
+setTimeout(() => {
+  console.log('Running delayed removal for dynamically loaded content.');
+  removeElementsBySelector(selectorsToRemove);
+}, 10000); // Delay of 10000 milliseconds (10 seconds)
