@@ -1,61 +1,77 @@
-function removeElementsBySelector(selectors) {
+function removeElementsAndSpace(selectors) {
   selectors.forEach(selector => {
-    // Check if the selector is for an ID
-    if (selector.startsWith('#')) {
-      const element = document.getElementById(selector.substring(1));
-      if (element) {
-        element.parentNode.removeChild(element);
+    const elements = document.querySelectorAll(selector);
+    elements.forEach(element => {
+      // Check if the element is a block-level element
+      const style = window.getComputedStyle(element);
+      if (
+        style.display === 'block' ||
+        style.display === 'flex' ||
+        style.display === 'grid'
+      ) {
+        // If it's a block-level element, replace it with a zero-height element
+        const placeholder = document.createElement('div');
+        placeholder.style.height = '0';
+        placeholder.style.overflow = 'hidden';
+        placeholder.style.padding = '0';
+        placeholder.style.margin = '0';
+        placeholder.style.border = 'none';
+        element.parentNode.replaceChild(placeholder, element);
+      } else {
+        // If it's an inline element, simply remove it
+        element.remove();
       }
-    }
-    // Check if the selector is for a class
-    else if (selector.startsWith('.')) {
-      const elements = document.getElementsByClassName(selector.substring(1));
-      while (elements.length > 0) {
-        elements[0].parentNode.removeChild(elements[0]);
-      }
-    }
-    // Check if the selector is for a data-content attribute
-    else if (selector.startsWith('[data-content="')) {
-      const elements = document.querySelectorAll(selector);
-      elements.forEach(element => {
-        element.parentNode.removeChild(element);
-      });
-    }
+    });
   });
 }
 
-// Array of selectors (IDs, class names, and data-content attributes) to be removed
+// Array of selectors to be removed
 const selectorsToRemove = [
   '#mrt-node-Lead-0-Ad',
-  '.Pos(r) Maw(1260px) M(a) Ta(c) W(1260px)',
-  'Ta(c) Pos-r Z-0 Pos(r) Ov(a) Z(0) sdaLite_D(n)',
+  '.Pos\\(r\\).Maw\\(1260px\\).M\\(a\\).Ta\\(c\\).W\\(1260px\\)',
+  '.Ta\\(c\\).Pos-r.Z-0.Pos\\(r\\).Ov\\(a\\).Z\\(0\\).sdaLite_D\\(n\\)',
   '#mrt-node-Overlay-2-MonalixaComponent',
   '#defaultLREC-sizer',
   '#sda-Horizon',
-  // The following is for MSN sports page
   '.socialPostCard-DS-EntryPoint1-1',
   '#League_r_1',
-  '[data-content="Advertisement"]', // Example of a data-content attribute selector
-  '[data-content="CNN"]', // Generic example, adjust based on actual HTML structure
+  '[data-content="Advertisement"]',
+  '[data-content="CNN"]',
   '.trc-first-recommendation',
-  'videoCube',
-  'trc_spotlight_item',
-  'iframe[src*="cnn.com"]', // Blocks iframes containing CNN content
-  '[href*="cnn.com"]', // Blocks links pointing to CNN
+  '.videoCube',
+  '.trc_spotlight_item',
+  'iframe[src*="cnn.com"]',
+  '[href*="cnn.com"]',
   'span:contains("Ad")',
   '.native-ad-item',
   '.trc-content-sponsored',
   '.stream-ad',
-  '[id^="taboola"]'
+  '[id^="taboola"]',
+  '#taboola-stream-48-container',
+  '.Mih\\(119px\\)',
+  '#module-games',
+  '#module-horoscope',
+  '#module-subscription'
 ];
 
-// Call the function with the array of selectors immediately after DOM content loaded
-document.addEventListener('DOMContentLoaded', function () {
-  removeElementsBySelector(selectorsToRemove);
+function removeAds() {
+  removeElementsAndSpace(selectorsToRemove);
+}
+
+// Initial removal
+removeAds();
+
+// Set up a MutationObserver to watch for changes in the DOM
+const observer = new MutationObserver(mutations => {
+  mutations.forEach(mutation => {
+    if (mutation.type === 'childList') {
+      removeAds();
+    }
+  });
 });
 
-// Additional call with a delay to handle dynamically loaded content
-setTimeout(() => {
-  console.log('Running delayed removal for dynamically loaded content.');
-  removeElementsBySelector(selectorsToRemove);
-}, 10000); // Delay of 10000 milliseconds (10 seconds)
+// Start observing the document with the configured parameters
+observer.observe(document.body, { childList: true, subtree: true });
+
+// Periodically check for new ads
+setInterval(removeAds, 1000);

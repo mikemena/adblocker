@@ -36,5 +36,7 @@ var blocked_sites = [
   '*://*.service.innovid.com/*',
   '*://*.static.innovid.com/*',
   '*://*.video.innovid.com/*',
-  '*://*.x.innovid.com/*'
+  '*://*.x.innovid.com/*',
+  '*://beacon.taboola.com/*',
+  '*://trc.taboola.com/*'
 ];
